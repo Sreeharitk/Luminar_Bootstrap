@@ -1,0 +1,27 @@
+
+
+/* header */
+
+/* .nav-item a{
+    font-weight: 500;
+} */
+
+.nav-item  a:hover {
+    color:blueviolet !important;
+}
+
+
+/* responsive */
+
+@media (max-width:1202px) {
+    
+    .navbar-brand{
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    
+    .nav-item a{
+        font-size: small;
+        padding: 0;
+    }
+}
