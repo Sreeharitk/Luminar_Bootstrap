@@ -1,4 +1,9 @@
-
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
 
 /* header */
 
@@ -11,6 +16,41 @@
 }
 
 
+/* carousel */
+
+.carousel{
+    max-height: fit-content;
+}
+
+.carousel-item img{
+    filter: brightness(40%);
+}
+.carousel-item img{
+    height: 520px;
+    object-fit: cover;
+}
+
+.carousel-caption h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.btn{
+    background-color: #5e068a;
+    border: none;
+    color:#ffffff;
+    border-radius: 40px;
+    font-size: 16px;
+    height: 66px;
+}
+
+.btn:hover{
+    background-color: #9b3ccafc;
+    border: none;
+    color:#ffffff;
+}
+
+
 /* responsive */
 
 @media (max-width:1202px) {
@@ -20,8 +60,90 @@
         margin-left: 0 !important;
     }
     
+    .nav-item{
+        padding: 10px !important;
+    }
+
     .nav-item a{
         font-size: small;
         padding: 0;
     }
+}
+/* carousel */
+@media (max-width:1310px) {
+    .carousel-caption h1{
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width:1130px) {
+    .carousel-caption h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .carousel-caption p{
+        font-size: 14px !important;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width:998px) {
+    .btn{
+        background-color: #5e068a;
+        border: none;
+        color:#ffffff;
+        border-radius: 40px;
+        font-size: 10px;
+        height: 68px;
+    }
+}
+
+@media (max-width:771px) {
+
+    .carousel-caption{
+        height: 500px;
+        display: flex !important;
+        flex-direction: column;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .carousel-caption h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-top: 90px !important;
+    }
+    .carousel-caption p{
+        font-size: 10px !important;
+        letter-spacing: 2px;
+        padding-bottom: 13px !important;
+    }
+    .btn{
+        font-size: 10px !important;
+        height: 48px;
+    }
+}
+
+@media (max-width:614px) {
+    .btn{
+        width: 40% !important;
+    }
+}
+
+@media (max-width:422px) {
+    .btn{
+        width: 50% !important;
+    }
+    .carousel-caption h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:361px) {
+    .carousel-caption h1{
+        font-size: 15px;
+        margin-top: 80px !important;
+    }
+
 }
