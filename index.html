@@ -18,8 +18,8 @@
       defer
     ></script>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
   <body>
@@ -70,14 +70,18 @@
     </header>
     <!-- carousel -->
     <section class="sec1">
-      <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
         <!-- <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div> -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="4000">
             <img
               src="./images/carousel_2.jpg"
               class="d-block w-100"
@@ -86,26 +90,32 @@
             <div
               class="carousel-caption d-none d-md-block text-start ms-5 ps-5 pt-0"
             >
-              <h1 class=" lh-1 ps-4 pb-3 animate__animated animate__fadeInUp animate_slow">
+              <h1
+                class="lh-1 ps-4 pb-3 animate__animated animate__fadeInUp animate_slow"
+              >
                 Kerala's No.1 IT Finishing School <br />
                 100% Placement Assistance
               </h1>
-              <p class="mb-0 fs-5 ps-4 w-75 pb-5 fw-light animate__animated animate__fadeInUp animate_slow">
+              <p
+                class="mb-0 fs-5 ps-4 w-75 pb-5 fw-light animate__animated animate__fadeInUp animate_slow"
+              >
                 We at LUMINAR TECHNOLAB offers best software training and
                 placement in emerging technologies like BIG DATA, Data Science,
                 Machine Learning,PYTHON, Software Testing.
               </p>
-              <div class="ps-4 pb-4 pt-2 animate__animated animate__fadeInUp animate_slow">
+              <div
+                class="ps-4 pb-4 pt-2 animate__animated animate__fadeInUp animate_slow"
+              >
                 <button
                   type="button"
-                  class="btn btn-primary btn-lg w-25 p-3 fw-semibold text-center"
+                  class="btn1 btn-primary btn-lg w-25 p-3 fw-semibold text-center"
                 >
                   VIEW COURSES
                 </button>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="4000">
             <img
               src="./images/carousel_1.jpg"
               class="d-block w-100"
@@ -114,20 +124,26 @@
             <div
               class="carousel-caption d-none d-md-block text-start ms-5 ps-5"
             >
-              <h1 class="mt-3 lh-1 ps-4 animate__animated animate__fadeInUp animate_slow">
+              <h1
+                class="mt-3 lh-1 ps-4 animate__animated animate__fadeInUp animate_slow"
+              >
                 Data Science, ML & AI <br />
                 Big Data - Hadoop & Spark <br />
                 Python Data Science
               </h1>
-              <p class="fs-5 p-4 w-75 fw-light animate__animated animate__fadeInUp animate_slow">
+              <p
+                class="fs-5 p-4 w-75 fw-light animate__animated animate__fadeInUp animate_slow"
+              >
                 We LUMINAR TECHNOLAB offers best software training and placement
                 in emerging technologies like Big Data, Hadoop, Spark,Data
                 Scince, Machine Learning, Deep Learning and AI.
               </p>
-              <div class="ps-4 pt-2 animate__animated animate__fadeInUp animate_slow">
+              <div
+                class="ps-4 pt-2 animate__animated animate__fadeInUp animate_slow"
+              >
                 <button
                   type="button"
-                  class="btn btn-primary btn-lg w-25 p-3 fw-semibold text-center"
+                  class="btn1 btn-primary btn-lg w-25 p-3 fw-semibold text-center"
                 >
                   VIEW COURSES
                 </button>
@@ -153,6 +169,80 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+    </section>
+    <!-- Modal -->
+    <section>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn2 btn btn-primary mt-3 ms-2"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Get training
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content container ps-5 pe-5">
+            <div class="text-end pt-4 d-block">
+              <button
+                  type="button"
+                  class="btn-close pb-5"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-header p-0">
+              <h1 class="modal-title fs-4 mb-3" id="staticBackdropLabel">
+                Get Training Quote for free
+              </h1>
+            </div>
+            <div class="modal-body p-0">
+              <form action="" class="frm">
+                <div class="mb-3 fd">
+                  <input type="text" class="form-control border-none" id="exampleFormControlInput1" placeholder="Name">
+                </div>
+                <div class="mb-3 fd">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                </div>
+                <div class="mb-3 fd">
+                  <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Phone">
+                </div>
+                <select class="form-select mb-3 fd" aria-label="Default select example">
+                  <option selected>Select Course interested in</option>
+                  <option value="1">Data Science - ML - AI - Big Data with Cloud & Tableau</option>
+                  <option value="2">Python Django - Angular- Full Stack Web Development Expert</option>
+                  <option value="3">Software Testing Specialist</option>
+                  <option value="4">MEARN Stack Web Development Expert - Angular & React</option>
+                  <option value="5">Business Analytics - Power BI & Tableau</option>
+                  <option value="6">Android Developer Expert Training In Kochi- Flutter</option>
+                  <option value="7">PYTHON -DATA SCIENCE with ML - AI - & TABLEAU</option>
+                </select>
+                <div class="mb-3 fd">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="City">
+                </div>
+                <div class="mb-3 fd">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comments"></textarea>
+                </div>
+              </form>
+
+            </div>
+            <div class="mb-3 fd">
+              <input type="submit" name="submit" placeholder="Submit">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
