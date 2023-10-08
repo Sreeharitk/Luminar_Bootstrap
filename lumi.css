@@ -233,7 +233,7 @@ body{
 }
 .course-item:hover{
     scale: 1.01;
-    box-shadow: 4px 8px 0 rgba(35, 35, 35, 0.2), 0 6px 20px 0 rgba(43, 43, 43, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(35, 35, 35, 0.2), 0 6px 20px 0 rgba(43, 43, 43, 0.19);
 }
 
 .ci2 a{
@@ -421,12 +421,8 @@ body{
         }
 }
 
-/* @media (max-width:982px) {
-    
+@media (max-width:764px) {
     .ci1{
-        height: 550px;
+        padding:20px;
     }
-    .course-item{
-        height: 550px;
-    }
-} */
+}
